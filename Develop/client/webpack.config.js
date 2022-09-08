@@ -18,6 +18,24 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        template:"./index.html",
+        title: "J.A.T.E.",
+      }),
+
+      new InjectManifest ({
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js"
+      }),
+      
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: "Just Another Text Editor",
+        short_name: "J.A.T.E.",
+        description: "A Text Editor using IndexedDB with online and offline Capabilites",
+        background_color: 
+      })
       
     ],
 

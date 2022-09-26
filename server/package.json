@@ -4,11 +4,12 @@
   "description": "just another text editor",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js --ignore client"
+    "dev": "webpack-dev-server",
+   "server":"nodemon server.js --ignore client" 
   },
   "keywords": [],
   "devDependencies": {
-    "nodemon": "2.0.4"
+    "nodemon": "^2.0.20"
   },
   "repository": {
     "type": "git",

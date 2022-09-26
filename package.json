@@ -2,7 +2,7 @@
   "name": "challenge-19-jate-mm",
   "version": "1.0.0",
   "description": "Just another Text Editor",
-  "main": "server.js",
+  "private": "true",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/MacMitsch/Challenge-19-jate-mm#readme",
   "dependencies": {
     "concurrently": "^7.4.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0"
   }
 }

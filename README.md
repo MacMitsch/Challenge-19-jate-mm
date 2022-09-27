@@ -1,5 +1,7 @@
 # JATE
 
+Heroku deployment: https://text-editor-mm.herokuapp.com/
+
 This is not just any Text editor. its Just Another Text Editor
 
 ## Installation
